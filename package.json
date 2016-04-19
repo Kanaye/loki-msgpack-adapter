@@ -1,0 +1,27 @@
+{
+  "name": "loki-msgpack-adapter",
+  "version": "0.0.1",
+  "main": "loki-msgpack-adapter.js",
+  "description": "A LokiJS persistence adapter saving the database as an msgpack encoded file.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanaye/loki-msgpack-adapter.git"
+  },
+  "keywords": [
+    "lokijs",
+    "msgpack",
+    "persistence-adapter"
+  ],
+  "author": "Joscha Rohmann <joscha@kanaye.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kanaye/loki-msgpack-adapter/issues"
+  },
+  "homepage": "https://github.com/Kanaye/loki-msgpack-adapter#readme",
+  "dependencies": {
+    "msgpack-lite": "^0.1.18"
+  }
+}
