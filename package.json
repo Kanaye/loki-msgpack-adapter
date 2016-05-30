@@ -1,6 +1,6 @@
 {
   "name": "loki-msgpack-adapter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "loki-msgpack-adapter.js",
   "description": "A LokiJS persistence adapter saving the database as an msgpack encoded file.",
   "scripts": {
