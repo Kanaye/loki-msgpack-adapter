@@ -60,15 +60,11 @@
      * @param  {Function} fn     The callback function.
      */
     lokiMsgpackAdapter.prototype.loadDatabase = function(dbname, fn) {
-        this.adapter.loadDatabase(dbname, function(err, binary) {
-            if (err) {
-                return fn(err, null);
-            }
-
+        this.adapter.loadDatabase(dbname, function(binary) {
             try {
-                fn(null, msgpack.decode(binary));
+                fn(msgpack.decode(binary));
             } catch (err) {
-                fn(err, null);
+                fn(err);
             }
         });
     };
